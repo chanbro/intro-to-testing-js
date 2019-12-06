@@ -70,3 +70,28 @@ describe('sayHello', function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
 });
+
+//EXERCISE 8
+
+// Step 1: First, in tests.js, add expect(sayHello()).toBe("Hello, World!"). Then refresh report.html to see the failing test.
+
+describe('sayHello', function() {
+    it('should return the string "Hello, World!" when executed', function() {
+        expect(sayHello("World")).toBe("Hello, World!");
+    });
+});
+
+//Step 2: Next, add expect(sayHello(true)).toBe("Hello, World!") to the tests.js file. Refresh to see the failing red test.
+// Step 3: Now, add expect(sayHello(false)).toBe("Hello, World!") to the tests.js file. Refresh to see the failing test.
+
+describe('sayHello', function() {
+    it('should return the string "Hello, World!" when executed', function() {
+        expect(sayHello("World")).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when executed', function() {
+        expect(sayHello(true)).toBe("Hello, World!")
+    });
+    it('should return the string "Hello, World!" when executed', function() {
+        expect(sayHello(false)).toBe("Hello, World!")
+    });
+});

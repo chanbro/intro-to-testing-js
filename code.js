@@ -113,6 +113,30 @@
 // Does this bring up any other issues with other inputs?
 // Does not work with "Hello, Jane!"
 
+// function sayHello(input) {
+//     return "Hello, " + input + "!";
+// }
+
+//EXERCISE 7 Github push
+
+//EXERCISE 8
+
+// Step 2: Follow that by adding just enough code inside of the sayHello function code.js to green that latest test. Recommend checking if the input variable's value is undefined.
+// Step 3: Add just enough code to code.js to green that latest test. if (input === true) then return "Hello, World!"
+
 function sayHello(input) {
-    return "Hello, " + input + "!";
+    if (input === "Alex") {
+        return "Hello, Alex!";
+    } else if (input === "Pat") {
+        return "Hello, Pat!";
+    } else if (input === "World") {
+        return "Hello, World!"
+    } else if (input === true) {
+        return "Hello, World!"
+    } else if (input === false) {
+    return "Hello, World!"
+    } else {
+        return "Hello, Jane!";
+    }
 }
+
