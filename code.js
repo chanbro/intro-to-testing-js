@@ -64,8 +64,12 @@ function helloWorld() {
 
 }
 
+//EXERCISE 2
 
-
+// Step 3: Have your sayHello function return a string. The simplest code and smallest change possible is to return an empty string return "".
+    function helloWorld() {
+    return ""
+}
 
 
 
