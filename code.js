@@ -140,3 +140,9 @@ function sayHello(input) {
     }
 }
 
+//EXERCISE 10
+
+
+function isFive() {
+
+}

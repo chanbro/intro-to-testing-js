@@ -95,3 +95,17 @@ describe('sayHello', function() {
         expect(sayHello(false)).toBe("Hello, World!")
     });
 });
+
+//EXERCISE 9 Github Push
+
+//EXERCISE 10
+
+//Step 1: Inside of tests.js, write a describe block for our new isFive function.
+//Step 2:  As your first, failing test, write an it and an expect asserting that a function named isFive exists.
+// Step 3: Run the tests by refreshing report.html to show the red, failing test.
+
+describe('isFive', function() {
+    it('should be a defined function', function() {
+      expect(typeof isFive).toBe('function');
+    });
+});
