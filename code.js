@@ -60,16 +60,59 @@
 
 // Step 3: Now, let's go to code.js and create an empty function definition for sayHello.
 // Step 4: Run all the tests. We're expecting all tests, including the new test for sayHello to be green.
-function helloWorld() {
 
-}
+// function sayHello() {
+//
+// }
 
 //EXERCISE 2
 
 // Step 3: Have your sayHello function return a string. The simplest code and smallest change possible is to return an empty string return "".
-    function helloWorld() {
-    return ""
+
+// function sayHello() {
+//     return ""
+// }
+
+//EXERCISE 3
+// Step 3: If the test wants us to return "Hello, Jane!" then literally write return "Hello, Jane!"; because that's the simplest way to green a test looking for "Hello, Jane!".
+
+// function sayHello() {
+//     return "Hello, Jane!";
+// }
+
+//EXERCISE 4
+// Step 3: It's challenging not to jump to the "correct" answer already, but let's stay close to the TDD method. Write just enough code to green the test. This means making sure that the sayHello function definition inside of code.js takes an an input argument. If input === "Alex",
+
+// function sayHello(input) {
+//     if (input === "Alex") {
+//         return "Hello, Alex!";
+//     } else {
+//         return "Hello, Jane!";
+//     }
+// }
+
+//EXERCISE 5
+
+// Step 3: Again, you may feel the urge to jump to the "correct" answer already. Let's stay on target. Write just enough code to green the test. For this case, just enough code means adding another conditional such that if input === "Pat", then the function should have return "Hello, Pat!".
+
+// function sayHello(input) {
+//     if (input === "Alex") {
+//         return "Hello, Alex!";
+//     } else if (input === "Pat") {
+//         return "Hello, Pat!";
+//     } else {
+//         return "Hello, Jane!";
+//     }
+// }
+
+// EXERCISE 6
+
+// Inside sayHello in code.js, what's a change you can identify that will improve the overall functioning of this function?
+// Can you get the implmentation of sayHello down to a function with only one line of code inside?
+//If we have return "Hello, " + input + "!";, does this work for all names?
+// Does this bring up any other issues with other inputs?
+// Does not work with "Hello, Jane!"
+
+function sayHello(input) {
+    return "Hello, " + input + "!";
 }
-
-
-
